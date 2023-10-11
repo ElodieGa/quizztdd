@@ -1,0 +1,10 @@
+Options -Indexes
+Options +FollowSymlinks
+RewriteEngine On
+
+RewriteRule ^play/(.*)/$ controllers/playController.php?id_question=$1 [L]
+RewriteRule ^score/$ controllers/scoreController.php [L]
+RewriteRule ^add-question/$ controllers/addQuestionController.php [L]
+
+RewriteRule ^(.*)\-([a-f0-9]+)\.(js)/?$ $1.$3 [L]
+RewriteRule ^(.*)\-([a-f0-9]+)\.(css)/?$ $1.$3 [L]
