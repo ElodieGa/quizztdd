@@ -31,6 +31,7 @@ class PlayController extends Controller {
         $sNextURL = $bIsLastQuestion ? "/quizztdd/score/" : "/quizztdd/play/{$iNextIdQuestion}/";
 
         $aReponses = Reponses::getReponsesByIdQuestion($iIdQuestion);
+        shuffle($aReponses);
 
         // Si dernière question répondue alors on stocke la réponse en base
         if (isset($_POST['reponse'])) {
