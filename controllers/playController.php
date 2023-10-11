@@ -57,6 +57,7 @@ class PlayController extends Controller {
     public function getQuestionById($iIdQuestion, $aQuestions)
     {
         // MISSING CODE
+        return 0;
     }
 
     /**
@@ -67,6 +68,7 @@ class PlayController extends Controller {
     public function getIdNextQuestion($iIdCurrentQuestion, $aQuestions)
     {
         // MISSING CODE
+        return 0;
     }
 }
 

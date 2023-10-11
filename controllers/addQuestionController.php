@@ -51,6 +51,7 @@ class AddQuestionsController extends Controller {
     public function isFormAddQuestionFilled($aForm)
     {
         // MISSING CODE
+        return 0;
     }
 
     /**
@@ -61,6 +62,7 @@ class AddQuestionsController extends Controller {
      */
     public function sum($a, $b) {
         // MISSING CODE
+        return 0;
     }
 }
 

@@ -50,6 +50,7 @@ class ScoreController extends Controller {
     public function getLastIdQuestion($aQuestions)
     {
         // MISSING CODE
+        return 0;
     }
 
     /**
@@ -60,6 +61,7 @@ class ScoreController extends Controller {
     public function calculateScore($aScores)
     {
         // MISSING CODE
+        return 0;
     }
 }
 
