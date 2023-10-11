@@ -1,0 +1,21 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="radio"] {
+    appearance: none;
+    transform: rotate(45deg);
+    border: 1px solid #f8fafc;
+	background-clip: content-box;
+	padding: 3px;
+}
+
+input[type="radio"]:checked {
+    border: 1px solid #67e8f9;
+	background-color: #67e8f9;
+}
+
+input[type="radio"]:checked+label {
+    color: #67e8f9;
+    font-weight: 500;
+}
