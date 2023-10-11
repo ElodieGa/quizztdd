@@ -61,6 +61,12 @@ class AddQuestionsController extends Controller {
         return true;
     }
 
+    /**
+     * Calcule la somme de deux nombres
+     * @param int $a Le premier nombre
+     * @param int $b Le deuxième nombre
+     * @return int La somme des deux nombres
+     */
     public function sum($a, $b) {
         return $a + $b;
     }
