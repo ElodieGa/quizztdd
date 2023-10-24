@@ -19,6 +19,17 @@ class ScoreControllerTest extends TestCase
         $this->assertEquals($iExpected, $iActual);
     }
 
+    public function testCalculateScoreWithEmptyArray(): void
+    {
+        $aScores = [];
+        $iExpected = 0;
+
+        $scoreController = new ScoreController();
+        $iActual = $scoreController->calculateScore($aScores);
+
+        $this->assertEquals($iExpected, $iActual);
+    }
+
     public function testGetLastIdQuestion(): void
     {
         $aQuestions = [['id' => 1, 'nom' => 'question 1'], ['id' => 2, 'nom' => 'question 2'], ['id' => 7, 'nom' => 'question 7']];
