@@ -29,4 +29,26 @@ class PlayControllerTest extends TestCase
 
         $this->assertEquals($iExpected, $iActual);
     }
+
+    public function testGetIdNextQuestionThatDoesntExist(): void
+    {
+        $aQuestions = [['id' => 1, 'nom' => 'question 1'], ['id' => 2, 'nom' => 'question 2'], ['id' => 7, 'nom' => 'question 7']];
+        $iExpected = false;
+
+        $playController = new PlayController();
+        $iActual = $playController->getIdNextQuestion(7, $aQuestions);
+
+        $this->assertEquals($iExpected, $iActual);
+    }
+
+    public function testGetIdNextQuestionWhenQuestionEmpty(): void
+    {
+        $aQuestions = [];
+        $iExpected = false;
+
+        $playController = new PlayController();
+        $iActual = $playController->getIdNextQuestion(1, $aQuestions);
+
+        $this->assertEquals($iExpected, $iActual);
+    }
 }
